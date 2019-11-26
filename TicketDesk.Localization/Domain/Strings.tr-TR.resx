@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllowInternalUsersToEditPriority" xml:space="preserve">
+    <value>Müşteri-kullanıcıların öncelik durumunu değiştirmesine izin ver?</value>
+  </data>
+  <data name="AllowInternalUsersToEditTags" xml:space="preserve">
+    <value>Müşteri-kullanıcılara etiketleri değiştirmesine izin ver?</value>
+  </data>
+  <data name="Changes_From_To" xml:space="preserve">
+    <value>{0}:  "{1}" ile "{2}"</value>
+  </data>
+  <data name="Changes_Title" xml:space="preserve">
+    <value>Değişiklik:</value>
+  </data>
+  <data name="CheckSecurity_NotAuthorized" xml:space="preserve">
+    <value>Kullanıcının bu işlemi yapmaya izni yoktur.</value>
+  </data>
+  <data name="DefaultNewUserRoles" xml:space="preserve">
+    <value>Varsayılan yeni kullanıcı rolleri</value>
+  </data>
+  <data name="Project_Description" xml:space="preserve">
+    <value>Proje Tanımı</value>
+  </data>
+  <data name="Project_Name" xml:space="preserve">
+    <value>Proje İsmi</value>
+  </data>
+  <data name="SelectList_Categories" xml:space="preserve">
+    <value>Kategoriler</value>
+  </data>
+  <data name="SelectList_Priorities" xml:space="preserve">
+    <value>Öncelikler</value>
+  </data>
+  <data name="SelectList_TicketTypes" xml:space="preserve">
+    <value>Bilet Tipleri</value>
+  </data>
+  <data name="TicketActivity_Assign" xml:space="preserve">
+    <value>Bileti Ata</value>
+  </data>
+  <data name="TicketActivity_CancelMoreInfo" xml:space="preserve">
+    <value>Vazgeç: Daha fazla bilgi</value>
+  </data>
+  <data name="TicketActivity_Close" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="TicketActivity_Comment" xml:space="preserve">
+    <value>Yorum yap</value>
+  </data>
+  <data name="TicketActivity_Create" xml:space="preserve">
+    <value>Oluştur</value>
+  </data>
+  <data name="TicketActivity_CreateOnBehalfOf" xml:space="preserve">
+    <value>Adına Oluştur</value>
+  </data>
+  <data name="TicketActivity_Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="TicketActivity_EditAttachments" xml:space="preserve">
+    <value>Eklentileri düzenle</value>
+  </data>
+  <data name="TicketActivity_ForceClose" xml:space="preserve">
+    <value>Zorla Kapat</value>
+  </data>
+  <data name="TicketActivity_GiveUp" xml:space="preserve">
+    <value>Vazgeç</value>
+  </data>
+  <data name="TicketActivity_Pass" xml:space="preserve">
+    <value>Başkasına Aktar</value>
+  </data>
+  <data name="TicketActivity_ProvideInfo" xml:space="preserve">
+    <value>Bilgi sağla</value>
+  </data>
+  <data name="TicketActivity_ReAssign" xml:space="preserve">
+    <value>Tekrar ata</value>
+  </data>
+  <data name="TicketActivity_ReOpen" xml:space="preserve">
+    <value>Tekrar aç</value>
+  </data>
+  <data name="TicketActivity_RequestMoreInfo" xml:space="preserve">
+    <value>Daha fazla bilgi talep et</value>
+  </data>
+  <data name="TicketActivity_Resolve" xml:space="preserve">
+    <value>Çözümle</value>
+  </data>
+  <data name="TicketActivity_TakeOver" xml:space="preserve">
+    <value>Bileti üzerine al</value>
+  </data>
+  <data name="TicketActivityAddComment" xml:space="preserve">
+    <value>yorum eklendi</value>
+  </data>
+  <data name="TicketActivityAssign" xml:space="preserve">
+    <value> Bilet {0} kullanıcısına atandı.</value>
+    <comment>{0} = user</comment>
+  </data>
+  <data name="TicketActivityCancelMoreInfo" xml:space="preserve">
+    <value>daha fazla bilgi talebini geri çekti.</value>
+  </data>
+  <data name="TicketActivityClose" xml:space="preserve">
+    <value>bileti kapadı.</value>
+  </data>
+  <data name="TicketActivityCreate" xml:space="preserve">
+    <value>bileti oluşturdu.</value>
+  </data>
+  <data name="TicketActivityCreateOnBehalfOf" xml:space="preserve">
+    <value>bileti {0} adına oluşturdu.</value>
+    <comment>{0} = user</comment>
+  </data>
+  <data name="TicketActivityEditTicketInfo" xml:space="preserve">
+    <value>bileti değiştirdi.</value>
+  </data>
+  <data name="TicketActivityForceClose" xml:space="preserve">
+    <value>bileti zorla kapattı.</value>
+  </data>
+  <data name="TicketActivityGiveUp" xml:space="preserve">
+    <value>biletten vazgeçti</value>
+  </data>
+  <data name="TicketActivityModifyAttachments" xml:space="preserve">
+    <value>değiştirilmiş bilet eklentileri.</value>
+  </data>
+  <data name="TicketActivityPass" xml:space="preserve">
+    <value>bileti {0} kullanıcısına iletti.</value>
+    <comment>{0} = user</comment>
+  </data>
+  <data name="TicketActivityReactivate" xml:space="preserve">
+    <value>bileti tekrar aktif hale getirdi.</value>
+  </data>
+  <data name="TicketActivityReAssign" xml:space="preserve">
+    <value>bileti  {0} kullanıcısına tekrar atadı.</value>
+    <comment>{0} = user</comment>
+  </data>
+  <data name="TicketActivityReOpen" xml:space="preserve">
+    <value>bileti tekrar açtı.</value>
+  </data>
+  <data name="TicketActivityRequestMoreInfo" xml:space="preserve">
+    <value>Daha fazla bilgi istedi.</value>
+  </data>
+  <data name="TicketActivityResolve" xml:space="preserve">
+    <value>bileti çözümledi.</value>
+  </data>
+  <data name="TicketActivitySupplyMoreInfo" xml:space="preserve">
+    <value>daha fazla bilgi verdi.</value>
+  </data>
+  <data name="TicketActivityTakeOver" xml:space="preserve">
+    <value>bileti üzerine aldı.</value>
+  </data>
+  <data name="DefaultListNameHistoryTickets" xml:space="preserve">
+    <value>Bilet Geçmişi</value>
+  </data>
+  <data name="DefaultListNameMyTickets" xml:space="preserve">
+    <value>Biletlerim</value>
+  </data>
+  <data name="DefaultListNameOpenTickets" xml:space="preserve">
+    <value>Açık Biletler</value>
+  </data>
+  <data name="ExceptionSecurityUserCannotCreateNewTicket" xml:space="preserve">
+    <value>Kullanıcının yeni bilet yaratma yetkisi yoktur.</value>
+  </data>
+  <data name="ExceptionSettingsTypeConversionError" xml:space="preserve">
+    <value>Tip değişikliği hatası: Ayar ismi [{0}] ayar tipi [{1}] ne çevrilemedi</value>
+  </data>
+  <data name="TicketAffectsCustomer" xml:space="preserve">
+    <value>Müşteriyi Etkiler</value>
+  </data>
+  <data name="TicketAffectsCustomerShort" xml:space="preserve">
+    <value>Müşteri</value>
+  </data>
+  <data name="TicketAssignedTo" xml:space="preserve">
+    <value>Şuna atanmış</value>
+  </data>
+  <data name="TicketAssignedToShort" xml:space="preserve">
+    <value>atanmış</value>
+  </data>
+  <data name="TicketCategory" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="TicketCategoryShort" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="TicketCreatedBy" xml:space="preserve">
+    <value>Oluşturan:</value>
+  </data>
+  <data name="TicketCreatedByShort" xml:space="preserve">
+    <value>Oluşturan:</value>
+  </data>
+  <data name="TicketCreatedDate" xml:space="preserve">
+    <value>Oluşturulma tarihi</value>
+  </data>
+  <data name="TicketCreatedDateShort" xml:space="preserve">
+    <value>Oluşturulma tarihi</value>
+  </data>
+  <data name="TicketCurrentStatusDate" xml:space="preserve">
+    <value>Son Durum Değiştirilme Tarihi</value>
+  </data>
+  <data name="TicketCurrentStatusDateShort" xml:space="preserve">
+    <value>Durum Değiştirilme Tarihi</value>
+  </data>
+  <data name="TicketCurrentStatusSetBy" xml:space="preserve">
+    <value>Durum düzenleyen</value>
+  </data>
+  <data name="TicketCurrentStatusSetByShort" xml:space="preserve">
+    <value>Durum düzenleyen</value>
+  </data>
+  <data name="TicketDetails" xml:space="preserve">
+    <value>Ayrıntılar</value>
+  </data>
+  <data name="TicketDetailsShort" xml:space="preserve">
+    <value>Ayrıntılar</value>
+  </data>
+  <data name="TicketIsHtml" xml:space="preserve">
+    <value>Html</value>
+  </data>
+  <data name="TicketIsHtmlShort" xml:space="preserve">
+    <value>Html</value>
+  </data>
+  <data name="TicketLastUpdateBy" xml:space="preserve">
+    <value>Güncelleştiren</value>
+  </data>
+  <data name="TicketLastUpdateByShort" xml:space="preserve">
+    <value>Güncelleştiren</value>
+  </data>
+  <data name="TicketLastUpdateDate" xml:space="preserve">
+    <value>Güncelleme tarihi</value>
+  </data>
+  <data name="TicketLastUpdateDateShort" xml:space="preserve">
+    <value>Güncelleme tarihi</value>
+  </data>
+  <data name="TicketOwner" xml:space="preserve">
+    <value>Sahibi</value>
+  </data>
+  <data name="TicketOwnerShort" xml:space="preserve">
+    <value>Sahibi</value>
+  </data>
+  <data name="TicketPriority" xml:space="preserve">
+    <value>Öncelik</value>
+  </data>
+  <data name="TicketPriorityShort" xml:space="preserve">
+    <value>Öncelik</value>
+  </data>
+  <data name="TicketStatusActive" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="TicketStatusClosed" xml:space="preserve">
+    <value>Kapalı</value>
+  </data>
+  <data name="TicketStatusMoreInfo" xml:space="preserve">
+    <value>Daha fazla bilgi</value>
+  </data>
+  <data name="TicketStatusResolved" xml:space="preserve">
+    <value>Çözüldü</value>
+  </data>
+  <data name="TicketTagList" xml:space="preserve">
+    <value>Etiketler</value>
+  </data>
+  <data name="TicketTagListShort" xml:space="preserve">
+    <value>Etiketler</value>
+  </data>
+  <data name="TicketTicketId" xml:space="preserve">
+    <value>Bilet Numarası</value>
+  </data>
+  <data name="TicketTicketIdShort" xml:space="preserve">
+    <value>Bilet Numarası</value>
+  </data>
+  <data name="TicketTicketStatus" xml:space="preserve">
+    <value>Bilet durumu</value>
+  </data>
+  <data name="TicketTicketStatusShort" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="TicketTicketType" xml:space="preserve">
+    <value>Bilet Tip</value>
+  </data>
+  <data name="TicketTicketTypeShort" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="TicketTitle" xml:space="preserve">
+    <value>Bilet başlığı</value>
+  </data>
+  <data name="TicketTitleShort" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="TicketActivityPriority" xml:space="preserve">
+    <value> {0} öncelik durumunda</value>
+    <comment>leading space</comment>
+  </data>
+  <data name="DefaultListNameAssignedToMe" xml:space="preserve">
+    <value>Bana atanmış biletler</value>
+  </data>
+  <data name="DefaultListNameUnassigned" xml:space="preserve">
+    <value>Atanmamış</value>
+  </data>
+  <data name="TicketProject" xml:space="preserve">
+    <value>Proje</value>
+  </data>
+  <data name="TicketProjectShort" xml:space="preserve">
+    <value>Proje</value>
+  </data>
+  <data name="AllowInternalUsersToSetAssigned" xml:space="preserve">
+    <value>Müşteri-kullanıcıların biletin kime verildiğini değiştirmesine izin ver?</value>
+  </data>
+  <data name="AllowInternalUsersToSetOwner" xml:space="preserve">
+    <value>Müşteri-kullanıcıların biletin sahibini değiştirmesine izin ver?</value>
+  </data>
+  <data name="TicketDueDate" xml:space="preserve">
+    <value>Bitirilmesi gereken tarih</value>
+  </data>
+  <data name="TicketDueDateShort" xml:space="preserve">
+    <value>Bitirilmesi gereken tarih</value>
+  </data>
+  <data name="TicketActualDuration" xml:space="preserve">
+    <value>Geçen gerçek süre</value>
+  </data>
+  <data name="TicketActualDurationShort" xml:space="preserve">
+    <value>Gerçek süre</value>
+  </data>
+  <data name="TicketEstimatedDuration" xml:space="preserve">
+    <value>Tahmini Bitiş Süresi</value>
+  </data>
+  <data name="TicketEstimatedDurationShort" xml:space="preserve">
+    <value>Tahmini Bitiş Süresi</value>
+  </data>
+  <data name="TicketResolutionDate" xml:space="preserve">
+    <value>Çözüm Tarihi</value>
+  </data>
+  <data name="TicketResolutionDateShort" xml:space="preserve">
+    <value>Çözüm</value>
+  </data>
+  <data name="TicketTargetDate" xml:space="preserve">
+    <value>Bitmesi hedeflenen tarih</value>
+  </data>
+  <data name="TicketTargetDateShort" xml:space="preserve">
+    <value>Hedef</value>
+  </data>
+  <data name="DefaultLogonDomain" xml:space="preserve">
+    <value>Varsayılan giriş alanı</value>
+  </data>
+  <data name="DefaultListNameAllTickets" xml:space="preserve">
+    <value>Bütün Biletler</value>
+  </data>
+</root>

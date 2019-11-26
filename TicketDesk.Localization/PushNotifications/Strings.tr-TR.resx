@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApiKey" xml:space="preserve">
+    <value>ApiKey</value>
+  </data>
+  <data name="ApiKey_Description" xml:space="preserve">
+    <value>SendGrid le giriş yapmak için ApiKey kullanılıyor.(Bu sağlayıcı kullancı adı/parolayla çalışmıyor)</value>
+  </data>
+  <data name="ClickTracking" xml:space="preserve">
+    <value>Tıklama Takibi</value>
+  </data>
+  <data name="ClickTracking_Description" xml:space="preserve">
+    <value>SendGrid'in tıklama takibini etkinleştir.</value>
+  </data>
+  <data name="ClickTracking_Prompt" xml:space="preserve">
+    <value>Etkinleştirildi</value>
+  </data>
+  <data name="ConsolidateNotifications" xml:space="preserve">
+    <value>Bildirimleri pekiştir</value>
+  </data>
+  <data name="ConsolidateNotifications_Description" xml:space="preserve">
+    <value>Pekiştirme bir olayın bildirimlerin gelmesini kısa süreliğine geciktirir. Eğer bir bilet için aynı kullanıcıdan birden fazla bilgi gelirse , bu bilgiler bir tane mesaja sıkıştırılır. Bu kısa sürede bir sürü değişiklik olan biletlerde Spam durumlarını azaltır.</value>
+    <comment>Pekiştirme bir olayın bildirimlerin gelmesini kısa süreliğine geciktirir. Eğer bir bilet için aynı kullanıcıdan birden fazla bilgi gelirse , bu bilgiler bir tane mesaja sıkıştırılır. Bu kısa sürede bir sürü değişiklik olan biletlerde Spam durumlarını azaltır.</comment>
+  </data>
+  <data name="ConsolidateNotifications_Prompt" xml:space="preserve">
+    <value>Etkinleştirildi</value>
+  </data>
+  <data name="DeliveryAttemptInterval" xml:space="preserve">
+    <value>Delivery Attempt Interval (minutes) Bildirim yollama kontrol süresi (dakika)</value>
+  </data>
+  <data name="DeliveryAttemptInterval_Description" xml:space="preserve">
+    <value>Yollanacak bildirimlerin hangi sıklıkla kontrol edileceğini belirler.</value>
+  </data>
+  <data name="DeliveryProviders" xml:space="preserve">
+    <value>Getir-Götür Sağlayıcıları</value>
+  </data>
+  <data name="EnableSSL" xml:space="preserve">
+    <value>SSL etkinleştir</value>
+  </data>
+  <data name="ExcludeSubscribersOwnEvents" xml:space="preserve">
+    <value> Abonenin kendi etkinliklerinin bildirimlerini gösterme.</value>
+  </data>
+  <data name="ExcludeSubscribersOwnEvents_Description" xml:space="preserve">
+    <value>Önemle tavsiye edilir. Bu özellik bildirimin oluşmasına sebebiyet veren işlemi yapan kullanıcıya konuyla ilgili bildirim gitmemesini sağlar.</value>
+  </data>
+  <data name="ExcludeSubscribersOwnEvents_Prompt" xml:space="preserve">
+    <value>Gösterme</value>
+  </data>
+  <data name="FromAddress" xml:space="preserve">
+    <value>Bu email adresinden</value>
+  </data>
+  <data name="FromAddress_Description" xml:space="preserve">
+    <value>Bu servisten email atarken kullanılacak olan email adresi.</value>
+  </data>
+  <data name="FromDisplayName" xml:space="preserve">
+    <value>Gözüken isimden</value>
+  </data>
+  <data name="FromDisplayName_Description" xml:space="preserve">
+    <value>Gelen adresinde kullanılmak üzere isim</value>
+  </data>
+  <data name="Gravatar" xml:space="preserve">
+    <value>Gravatar</value>
+  </data>
+  <data name="Gravatar_Description" xml:space="preserve">
+    <value>SenGrid'in garvatar özelliğini açar. (Gravatar üyeliği olması gerekli.) </value>
+  </data>
+  <data name="Gravatar_Prompt" xml:space="preserve">
+    <value>Etkinleştirildi</value>
+  </data>
+  <data name="InitialConsolidationDelay" xml:space="preserve">
+    <value>Pekiştirme bekletme süresi.</value>
+  </data>
+  <data name="InitialConsolidationDelay_Description" xml:space="preserve">
+    <value>Pekiştirme yapılmadan önce ne kadar beklenilmesi gerektiği.</value>
+  </data>
+  <data name="InitialRetryInterval" xml:space="preserve">
+    <value>İlk tekrar deneme süresi (dakika)</value>
+  </data>
+  <data name="InitialRetryInterval_Description" xml:space="preserve">
+    <value>İlk yeniden deneme için beklenecek dakika sayısı.örnek interval= 2 ve retry = 3 ise , bir daha ki deneme 8 dakika içinde olacak.</value>
+  </data>
+  <data name="MaximumConsolidationDelay" xml:space="preserve">
+    <value>Maksimum pekiştirme geciktirmesi (dakika)</value>
+  </data>
+  <data name="MaximumConsolidationDelay_Description" xml:space="preserve">
+    <value>Bir bildirim yollamadan önce beklenilebilecek maksimum süre.</value>
+  </data>
+  <data name="NotificationsEnabled" xml:space="preserve">
+    <value>Bildirimler Etkinleştirildi.</value>
+  </data>
+  <data name="NotificationsEnabled_Prompt" xml:space="preserve">
+    <value>Etkinleştirildi.</value>
+  </data>
+  <data name="NumberOfRetryAttempts" xml:space="preserve">
+    <value>Tekrar deneme sayısı</value>
+  </data>
+  <data name="NumberOfRetryAttempts_Description" xml:space="preserve">
+    <value>İşler ters giderse, bu bir mesaj başarısız olmadan önce kaç sefer deneme yapılacağı.</value>
+  </data>
+  <data name="OpenTracking" xml:space="preserve">
+    <value>Açık Takip(Open Tracking)</value>
+  </data>
+  <data name="OpenTracking_Description" xml:space="preserve">
+    <value>SendGrid'in açık takip özelliğini etkinleştirir.</value>
+  </data>
+  <data name="OpenTracking_Prompt" xml:space="preserve">
+    <value>Etkinleştirildi</value>
+  </data>
+  <data name="Provider" xml:space="preserve">
+    <value>Sağlayıcı</value>
+  </data>
+  <data name="Provider_Prompt" xml:space="preserve">
+    <value>Etkinleştirildi</value>
+  </data>
+  <data name="SendGridProvider" xml:space="preserve">
+    <value>SendGrid sağlayıcısı (Email)</value>
+  </data>
+  <data name="SendToSink" xml:space="preserve">
+    <value>Sink'e gönder</value>
+  </data>
+  <data name="SendToSink_Description" xml:space="preserve">
+    <value>SendGrid'teki bütün email adreslerine yollamak için.</value>
+  </data>
+  <data name="SendToSink_Prompt" xml:space="preserve">
+    <value>Etkinleştirildi.</value>
+  </data>
+  <data name="SMTPFromAddress" xml:space="preserve">
+    <value>SMTP Adres</value>
+  </data>
+  <data name="SMTPFromAddress_Description" xml:space="preserve">
+    <value>Bu sağlayıcıdan email yollarken kullanılacak mail adresi.</value>
+  </data>
+  <data name="SMTPFromDisplayName" xml:space="preserve">
+    <value>Gösterilecek isim</value>
+  </data>
+  <data name="SMTPFromDisplayName_Description" xml:space="preserve">
+    <value>Adresten oluşturulan maillerde kullanılacak isim.</value>
+  </data>
+  <data name="SMTPPassword" xml:space="preserve">
+    <value>SMTP Parolası</value>
+  </data>
+  <data name="SMTPPassword_Description" xml:space="preserve">
+    <value>Eğer kimlik doğrulaması gerekmiyorsa boş bırak.</value>
+  </data>
+  <data name="SMTPPort" xml:space="preserve">
+    <value>SMTP Portu</value>
+  </data>
+  <data name="SMTPProvider" xml:space="preserve">
+    <value>SMTP Sağlayıcı (Email)</value>
+  </data>
+  <data name="SMTPServerName" xml:space="preserve">
+    <value>SMTP Sunucu Adı</value>
+  </data>
+  <data name="SMTPUserName" xml:space="preserve">
+    <value>SMTP kullanıcı</value>
+  </data>
+  <data name="SMTPUserName_Description" xml:space="preserve">
+    <value>Kimlik doğrulaması gerekmiyorsa boş bırak.</value>
+  </data>
+  <data name="BackgroundQueueEnabled" xml:space="preserve">
+    <value>Arkaplan bildirim kuyruğunu etkinleştir.</value>
+  </data>
+  <data name="BackgroundQueueEnabled_Description" xml:space="preserve">
+    <value>Arkaplan bildirim kuyruğu oluşturmayı etkinleştir.&lt;br&gt;&lt;br&gt;Lokalizasyonu etkiler. Arkaplan bildirim kuyruğu etkinleştirilince, bütün email bildirimleri server'ın geçerli kültür ve dil seçeneklerine göre değerlendirilir. Etkinleştirilmezse, kullanıcının dil seçeneklerini kullanır.</value>
+  </data>
+  <data name="BackgroundQueueEnabled_Prompt" xml:space="preserve">
+    <value>Etkinleştirildi</value>
+  </data>
+  <data name="BroadcastMode" xml:space="preserve">
+    <value>Yayın Modu</value>
+  </data>
+  <data name="BroadcastMode_Description" xml:space="preserve">
+    <value>Yeni bilet bildirimlerini belirlenmiş bir email listesine ya da uygulamanın bütün Sistem yöneticileri ve Destek Birimlerine gönderir.</value>
+  </data>
+  <data name="IsBroadcastEnabled" xml:space="preserve">
+    <value>Yeni bilet bildirimleri etkinleştirildi.</value>
+  </data>
+  <data name="IsBroadcastEnabled_Prompt" xml:space="preserve">
+    <value>Etkinleştirildi</value>
+  </data>
+  <data name="PushNotificationBroadcastModeAllStaff" xml:space="preserve">
+    <value>Bütün sistem yetkilileri ve bütün çalışanlara bildirim yolla</value>
+  </data>
+  <data name="PushNotificationBroadcastModeCustomAddress" xml:space="preserve">
+    <value>Belirlenmiş bir email adresine yolla</value>
+  </data>
+  <data name="SendToCustomEmailAddress" xml:space="preserve">
+    <value>Burdaki E-mail adresine</value>
+  </data>
+  <data name="SendToCustomEmailAddress_Description" xml:space="preserve">
+    <value>Sadece belirlenmiş bir emaile bildirim istendiğinde kullanılır.</value>
+  </data>
+  <data name="SendToCustomEmailDisplayName" xml:space="preserve">
+    <value>Belirlenmiş bir email'e bildirim atarken gözüken kullanıcı ismi</value>
+  </data>
+  <data name="SendToCustomEmailDisplayName_Description" xml:space="preserve">
+    <value>Belirlenmiş bir email'e bildirim atarken , o maille tanımlamak istediğimiz ad.</value>
+  </data>
+</root>

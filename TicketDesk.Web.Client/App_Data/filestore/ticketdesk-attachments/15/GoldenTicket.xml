@@ -1,0 +1,678 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GoldenTicket</name>
+    </assembly>
+    <members>
+        <member name="T:GoldenTicket.Controllers.AccountController">
+            <summary>
+            Controller for accounts
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Controllers.AccountController.#ctor(Microsoft.AspNetCore.Identity.SignInManager{GoldenTicket.Models.Technician},Microsoft.Extensions.Logging.ILogger{GoldenTicket.Controllers.AccountController})">
+            <summary>
+            Initializes the Account Controller
+            </summary>
+            <param name="signInManager">manages sign in and out</param>
+            <param name="logger">logs</param>
+        </member>
+        <member name="M:GoldenTicket.Controllers.AccountController.Login">
+            <summary>
+            Handles logout
+            </summary>
+            <returns>login page</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.AccountController.Logout">
+            <summary>
+            Logs the user out.
+            </summary>
+            <returns>Redirect to login</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.AccountController.Login(GoldenTicket.Models.AccountViewModels.LoginRequest,System.String)">
+            <summary>
+            Method for logging in
+            </summary>
+            <param name="loginRequest">login information</param>
+            <param name="returnUrl">URL to return to after login</param>
+            <returns>login request page</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.AccountController.AccessDenied">
+            <summary>
+            Denies access
+            </summary>
+            <returns>Access denied page</returns>
+        </member>
+        <member name="T:GoldenTicket.Controllers.ClientsController">
+            <summary>
+            Controller for Clients
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Controllers.ClientsController.#ctor(GoldenTicket.Data.GoldenTicketContext)">
+            <summary>
+            Initializes _context
+            </summary>
+            <param name="context">context of client</param>
+        </member>
+        <member name="M:GoldenTicket.Controllers.ClientsController.All">
+            <summary>
+            Shows all clients
+            </summary>
+            <returns>clients page</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.ClientsController.Open(System.Guid)">
+            <summary>
+            Opens a client's details
+            </summary>
+            <param name="id">The id of the client</param>
+            <returns>The client</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.ClientsController.Add">
+            <summary>
+            Gets the add client view
+            </summary>
+            <returns>The add client view.</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.ClientsController.Add(GoldenTicket.Models.Client)">
+            <summary>
+            Adds a client to the database
+            </summary>
+            <param name="client">The client to add</param>
+            <returns>The added client</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.ClientsController.AddTicket(System.Guid)">
+            <summary>
+            Gets view for adding a ticket.
+            </summary>
+            <returns>The view.</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.ClientsController.AddTicket(GoldenTicket.Models.Ticket)">
+            <summary>
+            Adds a ticket
+            </summary>
+            <param name="ticket">The ticket to be added</param>
+            <returns>The added ticket</returns>
+        </member>
+        <member name="T:GoldenTicket.Controllers.ReportsController">
+            <summary>
+            For handling reports
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Controllers.ReportsController.#ctor(GoldenTicket.Data.GoldenTicketContext)">
+            <summary>
+            Initializes this controller
+            </summary>
+            <param name="context">context of the technician</param>
+        </member>
+        <member name="M:GoldenTicket.Controllers.ReportsController.All">
+            <summary>
+            Gets the report view
+            </summary>
+            <returns>The report view</returns>
+        </member>
+        <member name="T:GoldenTicket.Controllers.TechniciansController">
+            <summary>
+            Controller for technicians
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TechniciansController.#ctor(GoldenTicket.Data.GoldenTicketContext,Microsoft.AspNetCore.Identity.UserManager{GoldenTicket.Models.Technician})">
+            <summary>
+            intializes _context
+            </summary>
+            <param name="context">context of the technician</param>
+            <param name="userManager">the usermanager</param>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TechniciansController.All">
+            <summary>
+            Gets all technicians
+            </summary>
+            <returns>A list of all technicians</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TechniciansController.Add">
+            <summary>
+            Gets the view for adding a technician
+            </summary>
+            <returns>The add technician view</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TechniciansController.Add(GoldenTicket.Models.TechniciansViewModels.NewTechnician)">
+            <summary>
+            Adds a technician
+            </summary>
+            <returns>The technician list</returns>
+        </member>
+        <member name="T:GoldenTicket.Controllers.TicketsController">
+            <summary>
+            Controller for managing tickets
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.#ctor(GoldenTicket.Data.GoldenTicketContext,Microsoft.AspNetCore.Identity.UserManager{GoldenTicket.Models.Technician})">
+            <summary>
+            Initializes private variable _context
+            </summary>
+            <param name="context">context of current ticket</param>
+            <param name="userManager">The user manager</param>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.All(System.Boolean)">
+            <summary>
+            Used to view all tickets in queue
+            </summary>
+            <param name="includeClosed">boolean for including closed tickets</param>
+            <returns>view list of ordered tickets</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.Open(System.Guid)">
+            <summary>
+            Opens a ticket
+            </summary>
+            <param name="id">unique id of ticket</param>
+            <returns>view of the ticket</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.Edit(System.Guid)">
+            <summary>
+            Open a ticket for editiing
+            </summary>
+            <param name="id">unique id of ticket</param>
+            <returns>view of the ticket to edit</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.Edit(GoldenTicket.Models.Ticket)">
+            <summary>
+            Updates a ticket.
+            </summary>
+            <param name="ticketUpdate">The ticket update.</param>
+            <returns>The ticket view</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.AddTime(System.Guid)">
+            <summary>
+            Open the page for adding time to a ticket.
+            </summary>
+            <param name="id">The id of the ticket.</param>
+            <returns>The add time view</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.AddTime(GoldenTicket.Models.TicketsViewModels.TicketTime)">
+            <summary>
+            Add time to a ticket
+            </summary>
+            <param name="time">The time to add</param>
+            <returns>Redirect to ticket view</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.DeleteTime(System.Guid)">
+            <summary>
+            Deletes a time
+            </summary>
+            <param name="id">The id of the time</param>
+            <returns>The ticket view</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.Bill(System.Guid)">
+            <summary>
+            Gets bill.
+            </summary>
+            <param name="id">The id for the ticket</param>
+            <returns>The bill</returns>
+        </member>
+        <member name="M:GoldenTicket.Controllers.TicketsController.ToggleUrgent(System.Guid)">
+            <summary>
+            Toggles urgency of a ticket
+            </summary>
+            <param name="id">The id of the ticket</param>
+            <returns>The ticket</returns>
+        </member>
+        <member name="T:GoldenTicket.Data.DataConstants">
+            <summary>
+            Constant variables for data use.
+            </summary>
+        </member>
+        <member name="F:GoldenTicket.Data.DataConstants.AdministratorRole">
+            <summary>
+            The role of administrator.
+            </summary>
+        </member>
+        <member name="F:GoldenTicket.Data.DataConstants.RootUsername">
+            <summary>
+            Administrator username
+            </summary>
+        </member>
+        <member name="T:GoldenTicket.Data.GoldenTicketContext">
+            <summary>
+            The context for the GoldenTicket Api
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Data.GoldenTicketContext.Clients">
+            <summary>
+            The collection of clients
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Data.GoldenTicketContext.Tickets">
+            <summary>
+            The collection of tickets
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Data.GoldenTicketContext.TechnicianTicketTimes">
+            <summary>
+            The collection of TechnicianTicket pivot models
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Data.GoldenTicketContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{GoldenTicket.Data.GoldenTicketContext})">
+            <summary>
+            The constructor for this context
+            </summary>
+            <param name="options">The options to create the context around</param>
+            <returns>A new instance of this context</returns>
+        </member>
+        <member name="T:GoldenTicket.Data.Migrations.Intial">
+            <summary>
+            Initialization class
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Data.Migrations.Intial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Table builder
+            </summary>
+            <param name="migrationBuilder"> builder</param>
+        </member>
+        <member name="M:GoldenTicket.Data.Migrations.Intial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Creates droptable
+            </summary>
+            <param name="migrationBuilder">builder</param>
+        </member>
+        <member name="M:GoldenTicket.Data.Migrations.Intial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Builds target model 
+            </summary>
+            <param name="modelBuilder">builder</param>
+        </member>
+        <member name="T:GoldenTicket.Data.Migrations.TicetDateClosed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Data.Migrations.TicetDateClosed.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="migrationBuilder"></param>
+        </member>
+        <member name="M:GoldenTicket.Data.Migrations.TicetDateClosed.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="migrationBuilder"></param>
+        </member>
+        <member name="M:GoldenTicket.Data.Migrations.TicetDateClosed.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="T:GoldenTicket.Data.SeedData">
+            <summary>
+            Utility for seeding a GoldenTicket Context
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Data.SeedData.Initialize(GoldenTicket.Data.GoldenTicketContext,Microsoft.AspNetCore.Identity.UserManager{GoldenTicket.Models.Technician},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})">
+            <summary>
+            Initializes the ticket system with data
+            </summary>
+            <param name="context">context</param>
+            <param name="userManager">admin</param>
+            <param name="roleManager"></param>
+        </member>
+        <member name="T:GoldenTicket.Models.AccountViewModels.LoginRequest">
+            <summary>
+            Login information request model
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.AccountViewModels.LoginRequest.Username">
+            <summary>
+            Gets user's username
+            </summary>
+            <returns>username string</returns>
+        </member>
+        <member name="P:GoldenTicket.Models.AccountViewModels.LoginRequest.Password">
+            <summary>
+            Gets user's password
+            </summary>
+            <returns>password string</returns>
+        </member>
+        <member name="P:GoldenTicket.Models.AccountViewModels.LoginRequest.RememberMe">
+            <summary>
+            Option to remember user/password
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="T:GoldenTicket.Models.Client">
+            <summary>
+            A client and their related information
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Client.Id">
+            <summary>
+            The Id for this client
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Client.FirstName">
+            <summary>
+            The first name of the client
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Client.LastName">
+            <summary>
+            The last name of the client
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Client.PhoneNumber">
+            <summary>
+            The phone number of the client
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Client.EmailAddress">
+            <summary>
+            The email address of the client
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Client.Company">
+            <summary>
+            The company of the client
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Client.Address">
+            <summary>
+            The address of the client
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Client.DateAdded">
+            <summary>
+            The date that the client was added to the system
+            </summary>
+        </member>
+        <member name="T:GoldenTicket.Models.ClientsViewModels.ClientDetails">
+            <summary>
+            Client details request model
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.ClientsViewModels.ClientDetails.Client">
+            <summary>
+            Get's client
+            </summary>
+            <returns>the client</returns>
+        </member>
+        <member name="P:GoldenTicket.Models.ClientsViewModels.ClientDetails.Tickets">
+            <summary>
+            List of tickets associated with client
+            </summary>
+            <returns>client's ticket list</returns>
+        </member>
+        <member name="P:GoldenTicket.Models.ClientsViewModels.ClientDetails.OpenTicketCount">
+            <summary>
+            Count of open tickets.
+            </summary>
+        </member>
+        <member name="T:GoldenTicket.Models.ReportsViewModels.ReportDetails">
+            <summary>
+            Information for a report
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.ReportsViewModels.ReportDetails.AverageWait">
+            <summary>
+            Average Wait Time
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GoldenTicket.Models.ReportsViewModels.ReportDetails.AverageQueueLength">
+            <summary>
+            Average queue length
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.ReportsViewModels.ReportDetails.EmptyQueuePercentage">
+            <summary>
+            Empty queue percentage
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.ReportsViewModels.ReportDetails.TicketsNotAddressedSameDay">
+            <summary>
+            Tickets not addressed same day
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.ReportsViewModels.ReportDetails.TechnicianIdleHours">
+            <summary>
+            Hours each technician was idle
+            </summary>
+        </member>
+        <member name="T:GoldenTicket.Models.Technician">
+            <summary>
+            A Technician and information
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Technician.IsAdmin">
+            <summary>
+            Is the Technician an Admin?
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Technician.FirstName">
+            <summary>
+            The first name of the Technician
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Technician.LastName">
+            <summary>
+            The last name of the Technician
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Technician.DateAdded">
+            <summary>
+            The Date the technician was hired
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Models.Technician.GetPayRate">
+            <summary>
+            Gets pay rate for this technician
+            </summary>
+            <returns>Pay rate</returns>
+        </member>
+        <member name="T:GoldenTicket.Models.TechniciansViewModels.NewTechnician">
+            <summary>
+            For adding a new technician
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TechniciansViewModels.NewTechnician.Password">
+            <summary>
+            The password of the technician
+            </summary>
+        </member>
+        <member name="T:GoldenTicket.Models.TechnicianTicketTime">
+            <summary>
+            The pivot table model for many tickets to many technicians and for holding time worked data
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TechnicianTicketTime.Id">
+            <summary>
+            The id.
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TechnicianTicketTime.TechnicianId">
+            <summary>
+            The technician id
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TechnicianTicketTime.TicketId">
+            <summary>
+            The ticket id
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TechnicianTicketTime.Start">
+            <summary>
+            The start time
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TechnicianTicketTime.End">
+            <summary>
+            The end time
+            </summary>
+        </member>
+        <member name="T:GoldenTicket.Models.Ticket">
+            <summary>
+            A ticket for a client
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.Id">
+            <summary>
+            The Id for this ticket
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.ClientId">
+            <summary>
+            The Id for the client who owns this ticket
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.Title">
+            <summary>
+            The title of this ticket
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.Description">
+            <summary>
+            The description for this ticket
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.Complexity">
+            <summary>
+            The complexity (1-3) of this ticket
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.IsUrgent">
+            <summary>
+            Defines if this ticket is urgent
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.Notes">
+            <summary>
+            Notes for this ticket
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.DateAdded">
+            <summary>
+            The date added
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.DateClosed">
+            <summary>
+            The date closed
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.Ticket.Open">
+            <summary>
+            True if the ticket is open
+            </summary>
+        </member>
+        <member name="T:GoldenTicket.Models.TicketsViewModels.TechnicianTime">
+            <summary>
+            Tech time model
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TicketsViewModels.TechnicianTime.Technician">
+            <summary>
+            Get's technician
+            </summary>
+            <returns>technician</returns>
+        </member>
+        <member name="P:GoldenTicket.Models.TicketsViewModels.TechnicianTime.Time">
+            <summary>
+            get's time
+            </summary>
+            <returns>technician's ticket time</returns>
+        </member>
+        <member name="T:GoldenTicket.Models.TicketsViewModels.TicketDetails">
+            <summary>
+            ticket details model
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TicketsViewModels.TicketDetails.Ticket">
+            <summary>
+            get's ticket
+            </summary>
+            <returns>the ticket</returns>
+        </member>
+        <member name="P:GoldenTicket.Models.TicketsViewModels.TicketDetails.Client">
+            <summary>
+            get's Client
+            </summary>
+            <returns>the client</returns>
+        </member>
+        <member name="P:GoldenTicket.Models.TicketsViewModels.TicketDetails.Times">
+            <summary>
+            List of tech time associated with ticket
+            </summary>
+            <returns>list of tech times</returns>
+        </member>
+        <member name="T:GoldenTicket.Models.TicketsViewModels.TicketTime">
+            <summary>
+            Relates time and ticket information.
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TicketsViewModels.TicketTime.TicketTitle">
+            <summary>
+            The title of the ticket.
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TicketsViewModels.TicketTime.TicketId">
+            <summary>
+            The id of the ticket.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GoldenTicket.Models.TicketsViewModels.TicketTime.Start">
+            <summary>
+            The start time.
+            </summary>
+        </member>
+        <member name="P:GoldenTicket.Models.TicketsViewModels.TicketTime.End">
+            <summary>
+            The end time.
+            </summary>
+        </member>
+        <member name="T:GoldenTicket.Program">
+            <summary>
+            Our program
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Program.Main(System.String[])">
+            <summary>
+            Entry point of program
+            </summary>
+            <param name="args">command line arguments</param>
+        </member>
+        <member name="M:GoldenTicket.Program.BuildWebHost(System.String[])">
+            <summary>
+            builds the web host
+            </summary>
+            <param name="args">command line arguments</param>
+            <returns>errors</returns>
+        </member>
+        <member name="T:GoldenTicket.Startup">
+            <summary>
+            The class for starting the application. Gets the HostingEnvironment and Configuration
+            </summary>
+        </member>
+        <member name="M:GoldenTicket.Startup.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Creates a new instance of this class
+            </summary>
+            <param name="env">The hosting environment</param>
+            <param name="config">The configuration settings for the application</param>
+        </member>
+        <member name="M:GoldenTicket.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services for this application
+            </summary>
+            <param name="services">The service container for this application</param>
+        </member>
+        <member name="M:GoldenTicket.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,GoldenTicket.Data.GoldenTicketContext,Microsoft.Extensions.Logging.ILogger{GoldenTicket.Startup},Microsoft.AspNetCore.Hosting.IApplicationLifetime,Microsoft.AspNetCore.Identity.UserManager{GoldenTicket.Models.Technician})">
+            <summary>
+            Configures the application pipeline and pre-startup operations
+            </summary>
+            <param name="app">For configuring the application pipeline</param>
+            <param name="context"></param>
+            <param name="logger"></param>
+            <param name="applicationLifetime"></param>
+            <param name="userManager"></param>
+        </member>
+    </members>
+</doc>
